@@ -33,3 +33,33 @@ object.property
 object.mehtod()
 ```
 事件為預先定義好的特定動作，通常由使用者或系統觸發。  
+
+# JS優點
+1. 跨瀏覽器皆可使用
+2. 具備與網頁互動功能
+3. 提供表單前端驗證(Browser端)
+4. 動態更新網頁內容
+
+# 使用方式與位置
+兩種嵌入HTML的位置，以及兩種嵌入方式(直接寫/外掛樣式):
+1. inside body
+```diff
+<body>
+  <某個tag></某個tag>
++  <script>
++      ...js codes...
++  </script>
+</body>
+```
+2. inside head
+```diff
+<head>
+  <meta>
+  <title> xxx </title>
+  <link rel="stylesheet" href="./.css">
++  <script src="./xxx.js"></script>
+</head>
+<body>
+  ...
+</body>
+```
