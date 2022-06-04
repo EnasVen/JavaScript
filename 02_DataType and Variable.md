@@ -111,6 +111,8 @@ console.log(`n=${n},type of n = ${typeof n}`);
   - parseInt()方法 : 將字串轉成整數
   - parseFloat()方法 : 將字串轉成浮點數
   - Number(string)物件 : 將字串轉為數值  
+
+
 數值轉為字串:
   - number + "" : 運算子左右只要任一邊為字串，回傳結果就是字串!
   - number.toString()方法 : 數值轉為字串
