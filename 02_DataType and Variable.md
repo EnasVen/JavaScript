@@ -96,11 +96,14 @@ console.log(`n=${n},type of n = ${typeof n}`);
 5. undefined
   - 宣告變數時未指定值或不存在的物件
 
-物件資料型別則包含以下4種:
+物件資料型別則包含以下:
 1. Object
 2. Array
 3. Function
-4. RegExp
+4. String
+5. Number
+6. Boolean
+7. Date
 
 # 資料型別的獲取與轉換
 使用typeof運算子  
