@@ -57,7 +57,15 @@ console.log(strArray);
 console.log(`Type of this object is : ${typeof strArray}`);
 console.log("strObj.toUpperCase()="+strObj.toUpperCase());
 ```
+須注意字串的比大小預設使用ASCII作為比大小的依據!  
+字串的獲取可透過DOM抓取網頁元素內的value屬性:
+```
+var elementObj = document.getElementById(elementId);
+var strValue = elementObj.value // 例如: <h1  id="ID" value = "abc"> xxx </h1>
+```
+
 # Array物件
+
 
 # Date物件
 
