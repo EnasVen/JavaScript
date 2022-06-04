@@ -108,4 +108,48 @@
   </script>
   ```
   
+# 元素的新增與移除
+新增元素包含以下4步驟:
+1. 建立元素名稱
+2. 建立文字內容
+3. 使用appendChild將文字內容新增在元素之後
+4. 使用appendChild將新元素新增在特定元素之後
+
+移除元素包含以下2步驟:
+1. 找到刪除元素(透過索引)
+2. 使用node.parentNode.removeChild(node)的方式來刪除節點 或者 使用 node.remove()刪除節點
+
+範例: 
+```
+<body>
+    <div id="iddiv">div</div>
+    <input type="button" id="CEle" value="CreateElement">
+    <input type="button" id="REle" value="RemoveElement">
+    <script>
+        document.querySelector("#CEle").addEventListener("click", CreateElement)
+        document.querySelector("#REle").addEventListener("click", RemoveElement)
+
+        function CreateElement() {
+            let theDIV = document.querySelector("#iddiv");  //取得div物件
+
+            let eleP = document.createElement("p");
+            let txtP = document.createTextNode("Hello World");
+            eleP.appendChild(txtP);
+
+            theDIV.appendChild(eleP);
+
+            let eleImg = document.createElement("img");
+            eleImg.setAttribute("src", "DOM/DOMImage/rabbit-hat.gif");
+            eleImg.setAttribute("id" , "idImg");
+            theDIV.appendChild(eleImg);
+        }
+
+        function RemoveElement() {
+            let theNode = document.getElementById("idImg");
+            theNode.parentNode.removeChild(theNode);
+            // theNode.remove();
+        }
+    </script>
+</body>
+```
 
