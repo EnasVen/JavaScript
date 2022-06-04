@@ -83,8 +83,8 @@ JS內提供3種事件處理方式:
 > mouseover , mouseout : 滑鼠移入元素 , 滑鼠移出元素  
 > mousemove : 滑鼠在元素上移動  
 2. 鍵盤事件處理
-> keydown , keyup : 鍵盤按下 , 鍵盤放開  
-> keypress : 檢盤按下+放開  
+> keydown , keyup : 鍵盤按下 , 鍵盤放開(一律回傳大寫，可偵測特殊鍵)  
+> keypress : 檢盤按下+放開(有區分大小寫，無法偵測特殊鍵)  
 3. 其他事件處理
 > load : 視窗載入所有資源(文件、圖檔、樣式)後觸發  
 > DOMcontentLoaded : DOM架構載入後即可觸發  
