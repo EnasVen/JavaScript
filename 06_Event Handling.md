@@ -78,5 +78,16 @@ JS內提供3種事件處理方式:
   
 # 常用事件
 1. 滑鼠事件處理 
-2. 鍵盤事件處理 
+> click , dblclick : 單擊 , 雙擊  
+> mousedown , mouseup : 按下滑鼠左鍵 , 放開滑鼠左鍵  
+> mouseover , mouseout : 滑鼠移入元素 , 滑鼠移出元素  
+> mousemove : 滑鼠在元素上移動  
+2. 鍵盤事件處理
+> keydown , keyup : 鍵盤按下 , 鍵盤放開  
+> keypress : 檢盤按下+放開  
 3. 其他事件處理
+> load : 視窗載入所有資源(文件、圖檔、樣式)後觸發  
+> DOMcontentLoaded : DOM架構載入後即可觸發  
+> focus : 選取游標  
+> blur : 游標離開選取元素  
+> change : 改變文字方塊內容且離開 或者 選取下拉式選單  
