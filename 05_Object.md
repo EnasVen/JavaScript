@@ -138,11 +138,11 @@ dateObj = new Date(year,month,day [,hour[minute [, second [ , millisecond ]]]]);
 日期常使用的**方法**如下:
 > getFullYear() : 回傳西元年分  
 > getMonth() : 回傳月份值  
-> getDate() : 回傳日數(1~31)  
-> getDay() : 回傳星期數(0~6)  
-> getHours() : 回傳小時數(0~23)  
-> getMinutes() : 回傳分鐘數(0~59)  
-> getSeconds() : 回傳秒數(0~59)  
+> getDate() : 回傳日數(1 to 31)  
+> getDay() : 回傳星期數(0 to 6)  
+> getHours() : 回傳小時數(0 to 23)  
+> getMinutes() : 回傳分鐘數(0 to 59)  
+> getSeconds() : 回傳秒數(0 to 59)  
 > getTime() : 回傳自 1970/1/1 00:00:00起的秒數  
 
 ```
