@@ -60,4 +60,54 @@ let u;
 console.log(`u=${u},type of u = ${typeof u}`);
 //字串轉換為數值
 console.log(`Number("123.45")=${Number("123.45")}`);
+//數值轉換為字串
+let price=125;
+console.log(`price=${price}`); // ES6
+console.log( typeof(`price=${price}`));
 ```
+
+# 跳脫字元
+字串中表示特定字元，或者該字元具備特殊意義時使用
+1. \t : TAB (\0009)
+2. \n : 換行 (\u000A)
+3. \" : 雙引號 (\u0022)
+4. \' : 單引號 (\u0027)
+5. \\ : 反斜線 (\u005C)
+6. \xXX: 兩位數的16進位 (ASCII)
+7. \uXXXX : 以16進位數指定 Uncode字元輸出
+
+# 資料型別
+JS五大基本資料型別:
+1. Number
+  - double or float，共64bit
+2. String
+  - 雙引號 or 單引號呈現
+3. Boolean
+  - true , false
+  - true為1，false為0 (和Python非0即為真相同)
+  - 真假判斷式內，任何值都可以被轉成布林值，**而0,NaN,"",null,undefined則轉為false，其餘皆為true!!**
+4. null(Object)
+  - 無值或者null物件 
+```
+//null
+let n = null;
+console.log(`n=${n},type of n = ${typeof n}`);
+```
+5. undefined
+  - 宣告變數時未指定值或不存在的物件
+
+物件資料型別則包含以下4種:
+1. Object
+2. Array
+3. Function
+4. RegExp
+
+# 資料型別的獲取與轉換
+使用typeof運算子  
+字串轉為數值: 
+  - parseInt()方法 : 將字串轉成整數
+  - parseFloat()方法 : 將字串轉成浮點數
+  - Number(string)物件 : 將字串轉為數值
+數值轉為字串:
+  - number + "" : 運算子左右只要任一邊為字串，回傳結果就是字串!
+  - number.toString()方法 : 數值轉為字串
