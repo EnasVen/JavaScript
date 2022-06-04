@@ -63,3 +63,20 @@ object.mehtod()
   ...
 </body>
 ```
+
+# 撰寫風格
+每個敘述以;代表結束或分隔，程式區塊以大括號包起來{...}  
+單列與多列註解為 // 以及 /* ... */
+
+# 資訊輸出
+JS以4種方式進行輸出: 
+1. window.alert(message)
+  - 顯示對話方塊
+  - 回傳字串格式
+2. document.write(expr1 , expr2 , ...)
+  - 在網頁上印出HTML元素與字串
+  - 回傳字串格式
+3. console.log(expr)
+  - 在F12除錯模式內的CONSOLE區域顯示
+4. 物件.innerHTML = "輸出"
+  - 透過DOM架構獲取網頁物件，並以innreHTML屬性獲取或設定元素內容
