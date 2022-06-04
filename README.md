@@ -10,3 +10,4 @@ records of learning path on JavaScript !
 > **ch07** - Dynamic HTML  
 > **ch08** - BOM  
 > **ch09** - DOM  
+> **實戰訓練** - 五種綜合題目(九九乘法、表單檢核、星星評點、廣告輪播以及動態日曆)
