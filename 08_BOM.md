@@ -59,6 +59,8 @@ BOM為Browser Object Model的簡寫，其包含4類主物件:
     > querySelector(): 回傳符合CSS selector的第一個物件  
     > querySelectorAll(): 回傳符合CSS selector的所有元素，為類陣列的NodeList
   
+  NodeList和HTMLCollection兩者均具備length屬性與item(index)方法，但HTMLCollection多了一個namedItem(name)方法!!  
+  
   getElementBy...範例:  
   ```
   <body>
