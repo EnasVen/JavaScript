@@ -76,4 +76,27 @@
   ```
   
   # 迴圈
-  常用的for,while,do...while這邊就不介紹了，與Python相同
+  常用的for,while,do...while這邊就不介紹了，與Python相同  
+  如果要讀取iterable物件的內容，可使用for of來完成:
+  ```
+  var data = {"emps":[
+                      {"name":"Tom","workYears":3,"salary":45000},
+                      {"name":"Jack","workYears":5,"salary":55000},
+                      {"name":"Mary","workYears":7,"salary":65000}
+                   ]};
+                   
+ let nm , wy ,sla;
+let str = '<ul>'
+for(let v of data.emps){
+    // console.log(v);
+    // console.log(v.name);
+    nm = v.name;
+    wy=v.workYears;
+    sla=v.salary;
+    str += `<li>${nm},${wy},${sla}</li>`
+}
+str += "</ul>";
+document.getElementById("div1").innerHTML = str;
+  ```
+  
+  
