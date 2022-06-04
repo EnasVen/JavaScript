@@ -5,7 +5,7 @@ records of learning path on JavaScript !
 > **ch02** - Data Type and Variable  
 > **ch03** - Operator and Statement  
 > **ch04** - Function  
-> **ch05** - Objects  
+> **ch05** - Object  
 > **ch06** - Event Handling  
 > **ch07** - Dynamic HTML  
 > **ch08** - BOM  
