@@ -25,7 +25,10 @@ JS內的物件分成3種類型:
 stringObj = new String(["stringLiteral"])
 ```
 
-字串常使用的方法如下:
+字串常用的**屬性**如下:
+> length : 回傳字串長度
+
+字串常使用的**方法**如下:
 > charAt(char) : 回傳指定索引的字元位置(從0開始算)  
 > charCodeAt(index) : 回傳指定索引的Unicode字元  
 > indexOf(subString) : 回傳指定字串第一次出現的索引位置，找不到就return -1  
@@ -64,10 +67,24 @@ var elementObj = document.getElementById(elementId);
 var strValue = elementObj.value // 例如: <h1  id="ID" value = "abc"> xxx </h1>
 ```
 
+JS內常用的字元編碼:
+1. ASCII (American Standard Code for Information Interchange): 
+  - 基於拉丁字母的一套電腦編碼系統
+  - 主要用於英語系的文字編碼 
+2. Unicode (萬國碼/統一碼)
+  - 公認的編碼標準
+  - 對世界上大部分的文字進行整理和編碼，使電腦能夠以簡單的方式來顯示語言文字
+3. UTF-8 
+  - 針對Unicode的可變長度字元編碼
+  - 多使用於繁體或簡體中文
+  - 根據不同語言可使用不同的byte，例如漢字用3byte、英文字元只用1byte、阿拉伯文使用2byte...等等
+
 # Array物件
 
 
 # Date物件
+
+
 
 # Object物件
 
