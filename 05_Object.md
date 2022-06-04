@@ -236,3 +236,39 @@ for(t in cars){
 在JS內，物件也可以透過this代名詞來指向呼叫函數的物件!  
 
 # JSON物件
+全名為 JavaScript Object Notation，是一種常用的資料交換格式(Client <=> Browser之間溝通的資料格式)。  
+文件格式規範:
+1. {}包住物件
+2. []包住陣列
+3. ""包住字串 (不能使用單引號)
+4. 逗號區隔變數
+5. 名稱和值必須成對
+6. 名稱必須以雙引號包起來
+7. 值可為任何資料型態
+
+JSON常使用的**方法**如下:
+> JSON.sringify(): Client端的JS物件要傳給Web端時，使用此方法將物件序列化成一個JSON字串，然後傳送給Server
+> JSON.parse() : 從Server端取得JSON字串後，使用此方法將JSON字串轉為JS物件
+
+```
+//Object
+var obj1 = {name: "Tom", b: 20, c: {d:40,e:50} };
+var str = JSON.stringify(obj1);  //把物件轉成字串
+var obj2 = JSON.parse(str);   //把字串轉成JavaScript原生物件
+
+console.log("obj1:",obj1); 
+console.log("str:", str); 
+console.log("obj2:", obj2);  
+```
+
+
+# Math物件
+常用的數學方法: 
+> abs(x) : 絕對值  
+> ceil(x) / floor(x) : 大於/小於 等於x的最小整數  
+> max(x) / min(x) : 取最大/最小值  
+> pow(x,y) : x的y次方  
+> random() : (0,1]之間的亂數  
+> round(x [,length]) : 四捨五入到指定位數  
+> sin(x) , cos(x) , tan(x) , ... : 三角函數  
+> PI(x) : 圓周率  
