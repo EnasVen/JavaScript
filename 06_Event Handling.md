@@ -91,3 +91,21 @@ JS內提供3種事件處理方式:
 > focus : 選取游標  
 > blur : 游標離開選取元素  
 > change : 改變文字方塊內容且離開 或者 選取下拉式選單  
+
+# 網頁初始事件觸發方式:
+第一種寫法:
+```
+window.onload = function () { 
+	...
+}
+```
+
+第二種寫法:
+```
+document.addEventListener("DOMContentLoaded", function () {
+	...
+})
+```
+
+兩種寫法的差異在於，第一種會等到所有資源載入完畢才會開始執行  
+而第二種寫法顧名思義，DOM內容載入好了就會執行，也就是網頁架構DOM tree好了就會執行!  
